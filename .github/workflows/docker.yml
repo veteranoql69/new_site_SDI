@@ -6,8 +6,8 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  # GitHub automatically uses the lowercase repository name
-  IMAGE_NAME: ${{ github.repository }}
+  # Forzamos el nombre a minúsculas manualmente para evitar errores de GHCR
+  IMAGE_NAME: new_site_sdi
 
 jobs:
   build-and-push-image:
@@ -31,10 +31,11 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
+          images: ${{ env.REGISTRY }}/veteranoql69/${{ env.IMAGE_NAME }}
           tags: |
             type=raw,value=latest
             type=raw,value=v1
+            type=raw,value=v2
 
       - name: Build and push Docker image
         uses: docker/build-push-action@v5
