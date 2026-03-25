@@ -1,10 +1,10 @@
-FROM node:18-alpine AS base
+FROM node:20-alpine AS base
 
 # Step 1: Install dependencies and build the app
 FROM base AS builder
 WORKDIR /app
 COPY package.json package-lock.json ./
-RUN npm ci
+RUN npm install
 
 COPY . .
 # Disable telemetry during build
