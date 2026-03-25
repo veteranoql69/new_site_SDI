@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  sdi-site:
+    build: .
+    container_name: sdi-site-prod
+    restart: always
+    ports:
+      - "4000:3000"
+    environment:
+      - NODE_ENV=production
