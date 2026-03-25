@@ -11,3 +11,17 @@ services:
       replicas: 1
       restart_policy:
         condition: on-failure
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.sdi-site.rule=Host(`sditecnologia.cl`) || Host(`www.sditecnologia.cl`)"
+        - "traefik.http.routers.sdi-site.entrypoints=websecure"
+        - "traefik.http.routers.sdi-site.tls.certresolver=letsencryptresolver"
+        - "traefik.http.routers.sdi-site.tls=true"
+        - "traefik.http.services.sdi-site.loadbalancer.server.port=3000"
+    networks:
+      - DesaNet
+
+networks:
+  DesaNet:
+    external: true
+    name: DesaNet
