@@ -45,10 +45,21 @@ export async function POST(req: Request) {
       }, { status: 500 });
     }
 
-    const data = await response.json();
+    let data = await response.json();
     
-    // The n8n workflow returns the AI response in the main JSON body or a nested structure
-    // Based on the workflow: "AI Agent" -> "Respond to Webhook" sends the result
+    // Filter out potential [SYSTEM_DATA] blocks from the AI response string
+    // if the n8n response contains the message in a 'output' or 'text' field
+    const responseText = data.output || data.text || (typeof data === 'string' ? data : JSON.stringify(data));
+    
+    if (typeof responseText === 'string') {
+      const cleanText = responseText.replace(/\[SYSTEM_DATA\][\s\S]*?\[\/SYSTEM_DATA\]/g, '').trim();
+      
+      // Update the data object with cleaned text
+      if (data.output) data.output = cleanText;
+      if (data.text) data.text = cleanText;
+      if (typeof data === 'string') data = cleanText;
+    }
+
     return NextResponse.json(data);
   } catch (error) {
     console.error('Chat API Error:', error);
