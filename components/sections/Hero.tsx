@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useContact } from "@/components/providers/ContactProvider";
 
 export function Hero() {
+    const { openContactModal } = useContact();
     return (
         <div className="relative z-10 flex flex-col items-center gap-8">
             <motion.div
@@ -53,12 +55,12 @@ export function Hero() {
                 >
                     Explorar Soluciones
                 </Link>
-                <Link
-                    href="mailto:contacto@sditecnologia.cl"
+                <button
+                    onClick={openContactModal}
                     className="rounded-full border border-gray-700 bg-card px-8 py-3 font-semibold text-white transition hover:border-primary hover:bg-white/5 hover:scale-105 active:scale-95 cursor-pointer text-center"
                 >
                     Contáctanos
-                </Link>
+                </button>
             </motion.div>
         </div>
     );

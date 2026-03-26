@@ -8,6 +8,7 @@ services:
     environment:
       - NODE_ENV=production
       - N8N_WEBHOOK_URL=https://sdiwebhook.sditecnologia.cl/webhook/78795bc4-b573-4565-a885-525f6bdd3109
+      - CONTACT_FORM_WEBHOOK_URL=https://sdiwebhook.sditecnologia.cl/webhook/sdi_formulario
     deploy:
       replicas: 1
       restart_policy:

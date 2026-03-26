@@ -6,6 +6,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight } from "lucide-react";
 import Image from "next/image";
 
+import { useContact } from "@/components/providers/ContactProvider";
+
 const navLinks = [
     { name: "Agentes de IA", href: "/soluciones/agentes-ia" },
     { name: "IoT Industrial", href: "/soluciones/iot-industrial" },
@@ -13,6 +15,7 @@ const navLinks = [
 ];
 
 export function Navbar() {
+    const { openContactModal } = useContact();
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -60,12 +63,12 @@ export function Navbar() {
                                 {link.name}
                             </Link>
                         ))}
-                        <Link
-                            href="mailto:contacto@sditecnologia.cl"
+                        <button
+                            onClick={openContactModal}
                             className="bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all border border-white/10 hover:border-primary/50"
                         >
                             Contacto
-                        </Link>
+                        </button>
                     </div>
 
                     {/* Mobile Menu Button */}
