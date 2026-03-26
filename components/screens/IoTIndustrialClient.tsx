@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Truck, Activity, Box, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useContact } from "@/components/providers/ContactProvider";
 
 export function IoTIndustrialClient() {
+    const { openContactModal } = useContact();
     return (
         <div className="min-h-screen pt-24 pb-12 px-4 sm:px-8 bg-black selection:bg-primary/30 relative overflow-hidden">
 
@@ -147,7 +149,10 @@ export function IoTIndustrialClient() {
                 <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
                     Descubre cómo el IoT puede desbloquear eficiencias ocultas en tu operación.
                 </p>
-                <button className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow">
+                <button 
+                    onClick={() => openContactModal({ title: "Consultar Solución IoT Industrial", source: "IoT Industrial" })}
+                    className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow"
+                >
                     Consultar Solución
                 </button>
             </section>

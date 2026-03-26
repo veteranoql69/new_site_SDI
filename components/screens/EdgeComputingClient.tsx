@@ -3,8 +3,10 @@
 import { motion } from "framer-motion";
 import { Eye, Server, Zap, ArrowRight } from "lucide-react";
 import Image from "next/image";
+import { useContact } from "@/components/providers/ContactProvider";
 
 export function EdgeComputingClient() {
+    const { openContactModal } = useContact();
     return (
         <div className="min-h-screen pt-24 pb-12 px-4 sm:px-8 bg-black selection:bg-primary/30 relative overflow-hidden">
 
@@ -155,7 +157,10 @@ export function EdgeComputingClient() {
                 <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
                     Evaluamos tu hardware existente o diseñamos la solución de borde perfecta para tus necesidades.
                 </p>
-                <button className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow">
+                <button 
+                    onClick={() => openContactModal({ title: "Contactar con un Ingeniero", source: "Edge Computing" })}
+                    className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow"
+                >
                     Contactar Ingeniero
                 </button>
             </section>

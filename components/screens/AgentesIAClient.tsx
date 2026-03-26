@@ -3,8 +3,10 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Calendar, Users, TrendingUp, ArrowRight } from "lucide-react";
+import { useContact } from "@/components/providers/ContactProvider";
 
 export function AgentesIAClient() {
+    const { openContactModal } = useContact();
     return (
         <div className="min-h-screen pt-24 pb-12 px-4 sm:px-8 bg-black selection:bg-primary/30">
 
@@ -142,7 +144,10 @@ export function AgentesIAClient() {
                 <p className="text-gray-400 mb-8 max-w-2xl mx-auto">
                     Agenda una demo y ve a nuestros agentes en acción transformando procesos reales.
                 </p>
-                <button className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow">
+                <button 
+                    onClick={() => openContactModal({ title: "Solicitar Demo de Agentes IA", source: "Agentes IA" })}
+                    className="bg-primary text-black font-bold py-3 px-8 rounded-full hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow"
+                >
                     Solicitar Demo
                 </button>
             </section>

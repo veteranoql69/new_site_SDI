@@ -35,7 +35,7 @@ export function Footer() {
                         <ul className="space-y-2 text-sm text-gray-400">
                             <li><Link href="/#" className="hover:text-primary transition-colors">Nosotros</Link></li>
                             <li><Link href="/#" className="hover:text-primary transition-colors">Blog</Link></li>
-                            <li><button onClick={openContactModal} className="hover:text-primary transition-colors">Contacto</button></li>
+                            <li><button onClick={() => openContactModal({ title: "Contacto", source: "Footer Link" })} className="hover:text-primary transition-colors">Contacto</button></li>
                         </ul>
                     </div>
 
@@ -46,7 +46,7 @@ export function Footer() {
                             <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Github size={20} /></a>
                             <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Twitter size={20} /></a>
                             <a href="#" className="text-gray-400 hover:text-primary transition-colors"><Linkedin size={20} /></a>
-                            <button onClick={openContactModal} className="text-gray-400 hover:text-primary transition-colors"><Mail size={20} /></button>
+                            <button onClick={() => openContactModal({ title: "Envíanos un mail", source: "Footer Icon" })} className="text-gray-400 hover:text-primary transition-colors"><Mail size={20} /></button>
                         </div>
                     </div>
                 </div>

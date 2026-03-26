@@ -64,7 +64,7 @@ export function Navbar() {
                             </Link>
                         ))}
                         <button
-                            onClick={openContactModal}
+                            onClick={() => openContactModal({ title: "Hablemos", source: "Desktop Navbar" })}
                             className="bg-white/10 hover:bg-white/20 text-white px-5 py-2 rounded-full text-sm font-semibold transition-all border border-white/10 hover:border-primary/50"
                         >
                             Contacto
@@ -111,14 +111,15 @@ export function Navbar() {
                                 </Link>
                             ))}
                             <div className="w-full h-px bg-white/10 my-4" />
-                            <Link
-                                href="https://wa.me/56912345678"
-                                target="_blank"
-                                onClick={() => setIsMobileMenuOpen(false)}
+                            <button
+                                onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    openContactModal({ title: "Solicitar Demo", source: "Mobile Navbar" });
+                                }}
                                 className="bg-primary text-black px-8 py-3 rounded-full text-lg font-bold hover:shadow-[0_0_20px_rgba(0,242,234,0.4)] transition-shadow w-full max-w-xs text-center"
                             >
                                 Solicitar Demo
-                            </Link>
+                            </button>
                         </div>
                     </motion.div>
                 )}

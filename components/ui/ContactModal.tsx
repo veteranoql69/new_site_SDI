@@ -7,9 +7,11 @@ import { X, Send, CheckCircle2, AlertCircle, Building2, User, Mail, MessageSquar
 interface ContactModalProps {
     isOpen: boolean;
     onClose: () => void;
+    title?: string;
+    source?: string;
 }
 
-export function ContactModal({ isOpen, onClose }: ContactModalProps) {
+export function ContactModal({ isOpen, onClose, title, source }: ContactModalProps) {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
     const [formData, setFormData] = useState({
         name: "",
@@ -26,7 +28,10 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
             const response = await fetch("/api/contact", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData),
+                body: JSON.stringify({
+                    ...formData,
+                    source: source || "General Website"
+                }),
             });
 
             if (response.ok) {
@@ -77,7 +82,7 @@ export function ContactModal({ isOpen, onClose }: ContactModalProps) {
                             </button>
 
                             <div className="relative z-10">
-                                <h2 className="text-3xl font-bold text-white mb-2">Hablemos</h2>
+                                <h2 className="text-3xl font-bold text-white mb-2">{title || "Hablemos"}</h2>
                                 <p className="text-gray-400 mb-8">Cuéntanos sobre tu proyecto y cómo podemos impulsarlo con IA.</p>
 
                                 {status === "success" ? (

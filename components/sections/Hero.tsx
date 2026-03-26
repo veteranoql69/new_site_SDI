@@ -56,7 +56,7 @@ export function Hero() {
                     Explorar Soluciones
                 </Link>
                 <button
-                    onClick={openContactModal}
+                    onClick={() => openContactModal({ title: "Contáctanos", source: "Hero" })}
                     className="rounded-full border border-gray-700 bg-card px-8 py-3 font-semibold text-white transition hover:border-primary hover:bg-white/5 hover:scale-105 active:scale-95 cursor-pointer text-center"
                 >
                     Contáctanos
