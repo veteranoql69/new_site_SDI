@@ -3,8 +3,8 @@ version: '3.8'
 services:
   sdi-site:
     image: ghcr.io/veteranoql69/new_site_sdi:v2
-    ports:
-      - "4000:3000"
+    # ports:
+    #   - "4000:3000"
     environment:
       - NODE_ENV=production
     deploy:
