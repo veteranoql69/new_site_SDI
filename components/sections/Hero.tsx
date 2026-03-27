@@ -25,7 +25,7 @@ export function Hero() {
                 className="relative w-64 h-32 sm:w-80 sm:h-40"
             >
                 <Image
-                    src="/logo.png"
+                    src="/logo_oficial.png"
                     alt="SDI Tecnología Logo"
                     fill
                     className="object-contain drop-shadow-[0_0_25px_rgba(0,242,234,0.3)] mix-blend-screen"

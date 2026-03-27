@@ -41,7 +41,7 @@ export function Navbar() {
                     <Link href="/" className="flex items-center gap-2 group">
                         <div className="relative w-10 h-10">
                             <Image
-                                src="/logo.png"
+                                src="/logo_oficial.png"
                                 alt="SDI Logo"
                                 fill
                                 className="object-contain filter brightness-0 invert group-hover:drop-shadow-[0_0_8px_rgba(0,242,234,0.8)] transition-all"

@@ -18,6 +18,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SDI Tecnología | Inteligencia Artificial e IoT",
   description: "Líderes en implementación de IA, IoT y Edge Computing.",
+  icons: {
+    icon: "/logo_oficial.png",
+    apple: "/logo_oficial.png",
+  },
 };
 
 export default function RootLayout({
