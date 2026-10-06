@@ -34,6 +34,10 @@ El sitio **no nombra rubros ni clientes particulares** (confirmado 2026-10-06). 
 
 - "Todos venden agentes IA; nosotros nos preocupamos del proceso, no solo automatizamos WhatsApp o algún canal de redes sociales." (2026-10-06)
 
+- "La captura, integración e importancia de cada lead es uno de los pilares de nuestro negocio." (2026-10-06)
+
+**Pilar: cada lead importa.** Todo contacto se captura (venga del canal que venga, con su origen), se integra al proceso (agenda, cotización, ficha) y se le da su importancia (etapa y prioridad) para que no se enfríe. El propio sitio lo demuestra: chat, WhatsApp, formulario y redes llegan al mismo lugar con su origen.
+
 **Diferencia frente a la competencia:** el mercado está lleno de proveedores que venden un agente de IA para WhatsApp o redes. SDI no compite ahí. El agente es **una pieza** dentro del sistema del proceso. Un bot que contesta pero no conoce la agenda, el stock ni la cobranza es otra suscripción más. El sitio nunca debe presentar a SDI como "otra empresa de agentes IA": el proceso va primero y los agentes son una capacidad más. **IoT industrial y Edge/visión artificial se mantienen visibles** (menú principal y páginas propias); son capacidades que el resto no ofrece (confirmado 2026-10-06).
 
 De ahí sale la promesa central: **tecnología hecha a la medida del proceso del cliente, construida rápido, que reemplaza varias suscripciones**. Es una diferencia frente al SaaS genérico, no un producto. No se publican plazos, precios ni ahorros concretos mientras no haya casos que los respalden.
