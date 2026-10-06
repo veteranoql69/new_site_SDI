@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-06T00:00:00Z",
+  "title": "Design System: SDI Tecnología",
+  "extensions": {
+    "colorMeta": {
+      "paper": { "role": "neutral", "displayName": "Papel", "canonical": "oklch(100% 0 0)", "tonalRamp": ["#0b0b0b", "#242424", "#404040", "#5d5d5d", "#808080", "#a4a4a4", "#cacaca", "#eeeeee"] },
+      "desk": { "role": "neutral", "displayName": "Escritorio", "canonical": "oklch(95.4% 0.005 258.3)", "tonalRamp": ["#0a0b0d", "#232426", "#3e4042", "#5c5e60", "#7e8083", "#a3a5a7", "#c9cbcd", "#edeff2"] },
+      "grid": { "role": "neutral", "displayName": "Grilla", "canonical": "oklch(88.7% 0.009 258.3)", "tonalRamp": ["#090b0f", "#212429", "#3d4045", "#5a5e63", "#7d8086", "#a1a5ab", "#c7cbd1", "#ebeff5"] },
+      "band": { "role": "neutral", "displayName": "Banda", "canonical": "oklch(96.7% 0.003 264.5)", "tonalRamp": ["#0b0b0c", "#232425", "#3f4041", "#5d5e5f", "#7f8082", "#a4a4a6", "#c9cacc", "#edeef0"] },
+      "band-ink": { "role": "neutral", "displayName": "Tinta de banda", "canonical": "oklch(48.9% 0.031 266.3)", "tonalRamp": ["#060a18", "#1d2433", "#384050", "#565e6f", "#788093", "#9ca5b8", "#c1cbdf", "#e5efff"] },
+      "ink": { "role": "neutral", "displayName": "Tinta SDI", "canonical": "oklch(22.1% 0.081 267.9)", "tonalRamp": ["#030726", "#152147", "#2d3d6b", "#4a5b8c", "#6b7fb1", "#8fa3d8", "#b4c9ff", "#d9eeff"] },
+      "ink-soft": { "role": "neutral", "displayName": "Tinta suave", "canonical": "oklch(39.3% 0.054 271.3)", "tonalRamp": ["#050820", "#1b223e", "#353e5d", "#525c7d", "#747fa1", "#98a3c7", "#bdc9ef", "#e1edff"] },
+      "sdi": { "role": "primary", "displayName": "Azul SDI", "canonical": "oklch(60.4% 0.189 254.1)", "tonalRamp": ["#00003d", "#001b67", "#003a93", "#0059c2", "#077fed", "#43a6ff", "#7aceff", "#aaf3ff"] },
+      "sdi-strong": { "role": "primary", "displayName": "Azul SDI profundo", "canonical": "oklch(51.2% 0.177 257.2)", "tonalRamp": ["#00003b", "#001b64", "#00398f", "#0058be", "#2f7ee7", "#56a4ff", "#87ccff", "#b4f1ff"] },
+      "sdi-wash": { "role": "primary", "displayName": "Lavado SDI", "canonical": "oklch(96% 0.018 250.6)", "tonalRamp": ["#060c13", "#1d252d", "#394149", "#565f68", "#78818b", "#9ca6b0", "#c2ccd6", "#e6f0fb"] },
+      "mark": { "role": "secondary", "displayName": "Resaltador", "canonical": "oklch(92.2% 0.144 97.9)", "tonalRamp": ["#170700", "#342100", "#533d00", "#745b00", "#987f00", "#bda416", "#e1cb60", "#fff094"] },
+      "mark-soft": { "role": "secondary", "displayName": "Resaltador suave", "canonical": "oklch(97.2% 0.056 98.6)", "tonalRamp": ["#110a00", "#2b2400", "#47401a", "#665e38", "#89815a", "#ada67d", "#d4cca2", "#f8f0c5"] },
+      "saas": { "role": "tertiary", "displayName": "Rojo SaaS", "canonical": "oklch(54.1% 0.197 29.3)", "tonalRamp": ["#2f0000", "#580000", "#830000", "#b10804", "#dd3f31", "#ff6b58", "#ff9c88", "#ffc7b4"] },
+      "saas-wash": { "role": "tertiary", "displayName": "Lavado SaaS", "canonical": "oklch(96% 0.017 26.6)", "tonalRamp": ["#110908", "#2c2120", "#483d3b", "#675a59", "#8a7d7b", "#afa19f", "#d5c7c5", "#faebe9"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Display", "purpose": "H1 dentro de la celda seleccionada de cada hoja protagonista." },
+      "headline": { "displayName": "Headline", "purpose": "Títulos de sección." },
+      "title": { "displayName": "Title", "purpose": "Títulos de fila y bloque dentro de la hoja, encabezado del chat." },
+      "body": { "displayName": "Body", "purpose": "Texto de celdas y del chat, con cifras tabulares." },
+      "lede": { "displayName": "Lede", "purpose": "Párrafo de entrada bajo titulares, máximo 46 a 62ch." },
+      "cell-header": { "displayName": "Cell header", "purpose": "Encabezados de columna y etiquetas de campo." },
+      "band": { "displayName": "Band", "purpose": "Letras de columna y números de fila." },
+      "label": { "displayName": "Label", "purpose": "Rótulos de estado impresos en mayúsculas." }
+    },
+    "shadows": [
+      { "name": "sheet-lifted", "value": "0 1px 2px rgba(11,22,64,0.06), 0 20px 50px -30px rgba(11,22,64,0.35)", "purpose": "Solo la hoja principal de la portada sobre el escritorio." },
+      { "name": "button-primary", "value": "0 1px 2px rgba(11,22,64,0.2), 0 4px 12px -4px rgba(10,98,201,0.5)", "purpose": "Botón azul de acción." },
+      { "name": "chat-panel", "value": "0 24px 60px -20px rgba(11,22,64,0.45)", "purpose": "Diálogo flotante del chat." },
+      { "name": "chat-launcher", "value": "0 10px 30px -10px rgba(10,98,201,0.7)", "purpose": "Botón flotante Habla con SDI." },
+      { "name": "focus-ring", "value": "outline: 2px solid #0b80ee; outline-offset: 2px", "purpose": "Foco visible global; campos y celda seleccionada usan offset -2px." }
+    ],
+    "motion": [
+      { "name": "ease-out-expo", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Curva única del sitio (--ease-out-expo)." },
+      { "name": "convert-cells-exit", "value": "opacity 0 + clip-path inset(0 0 100% 0), 450ms", "purpose": "Convertir en sistema: las celdas del proceso se retiran." },
+      { "name": "convert-system-enter", "value": "opacity 0 -> 1, translateY 12px -> 0, 500ms, delay 50ms", "purpose": "Convertir en sistema: entra la interfaz del sistema." },
+      { "name": "convert-tabs-exit", "value": "opacity 0 + translateX 48px, 350ms, stagger 40ms", "purpose": "Convertir en sistema: las pestañas de SaaS y planillas salen." },
+      { "name": "convert-tab-settle", "value": "layout, 400ms, delay 200ms", "purpose": "Tu sistema queda como única pestaña activa." },
+      { "name": "chat-in", "value": "opacity 0 + translateY 10px -> rest, 240ms ease-out-expo, motion-safe", "purpose": "Apertura del panel de chat." },
+      { "name": "state-color", "value": "transition-colors 150ms", "purpose": "Hover de botones y enlaces." },
+      { "name": "reduced-motion", "value": "duration 0; scroll-behavior auto", "purpose": "Con prefers-reduced-motion todo es corte directo." }
+    ],
+    "breakpoints": [
+      { "name": "sm", "value": "640px" },
+      { "name": "md", "value": "768px" },
+      { "name": "lg", "value": "1024px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Habla con SDI: el llamado a la acción del sitio; abre el chat con su sección de origen.",
+      "html": "<button class=\"ds-btn-primary\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z\"/><path d=\"M13 8H7\"/><path d=\"M17 12H7\"/></svg>Habla con SDI</button>",
+      "css": ".ds-btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--color-sdi-strong, #0a62c9); color: #fff; border: 0; border-radius: 3px; padding: 12px 20px; font: 600 0.95rem/1.2 var(--font-sans, 'Schibsted Grotesk', sans-serif); box-shadow: 0 1px 2px rgba(11,22,64,0.2), 0 4px 12px -4px rgba(10,98,201,0.5); transition: background-color 150ms; cursor: pointer; } .ds-btn-primary:hover { background: var(--color-ink, #0b1640); } .ds-btn-primary:active { transform: translateY(1px); } .ds-btn-primary:focus-visible { outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: 2px; }"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Acción secundaria sobre papel: pie de página y Escribir por WhatsApp.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\">Escribir por WhatsApp</a>",
+      "css": ".ds-btn-quiet { display: inline-flex; align-items: center; gap: 8px; background: var(--color-paper, #fff); color: var(--color-ink, #0b1640); border: 1px solid var(--color-grid, #d6dae0); border-radius: 3px; padding: 12px 20px; font: 600 0.95rem/1.2 var(--font-sans, 'Schibsted Grotesk', sans-serif); text-decoration: none; transition: color 150ms, border-color 150ms; } .ds-btn-quiet:hover { border-color: var(--color-sdi, #0b80ee); color: var(--color-sdi-strong, #0a62c9); } .ds-btn-quiet:focus-visible { outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: 2px; }"
+    },
+    {
+      "name": "Sheet Form Field",
+      "kind": "input",
+      "refersTo": "cell-input",
+      "description": "Campo como fila de hoja: etiqueta en la banda, campo en la celda; foco con contorno interior azul.",
+      "html": "<div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-name\">Nombre<span class=\"ds-req\">*</span></label><input id=\"ds-name\" class=\"ds-field-input\" placeholder=\"Tu nombre\"></div><div class=\"ds-field\"><label class=\"ds-field-label\" for=\"ds-phone\">Teléfono<span class=\"ds-req\">*</span></label><input id=\"ds-phone\" class=\"ds-field-input\" aria-invalid=\"true\" placeholder=\"9 1234 5678\"></div>",
+      "css": ".ds-field { display: grid; grid-template-columns: 7.5rem 1fr; border: 1px solid var(--color-grid, #d6dae0); border-top: 0; background: var(--color-paper, #fff); } .ds-field:first-child { border-top: 1px solid var(--color-grid, #d6dae0); } .ds-field-label { display: flex; align-items: center; padding: 0 12px; background: var(--color-band, #f3f4f6); color: var(--color-band-ink, #586072); border-right: 1px solid var(--color-grid, #d6dae0); font: 500 0.85rem var(--font-sans, 'Schibsted Grotesk', sans-serif); letter-spacing: 0.02em; } .ds-req { margin-left: 2px; color: var(--color-sdi-strong, #0a62c9); } .ds-field-input { min-width: 0; border: 0; background: var(--color-paper, #fff); color: var(--color-ink, #0b1640); padding: 12px; font: 400 0.98rem var(--font-sans, 'Schibsted Grotesk', sans-serif); } .ds-field-input::placeholder { color: var(--color-band-ink, #586072); } .ds-field-input:focus { outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: -2px; } .ds-field-input[aria-invalid=true] { background: var(--color-saas-wash, #fdeeec); }"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Barra superior fija en papel con enlaces de 3px; activo en lavado azul.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-brand\">SDI Tecnología</span><a class=\"ds-nav-link\" href=\"#\">Cómo trabajamos</a><a class=\"ds-nav-link\" aria-current=\"page\" href=\"#\">IoT industrial</a><a class=\"ds-nav-link\" href=\"#\">Edge y visión</a><a class=\"ds-nav-link\" href=\"#\">Contacto</a></nav>",
+      "css": ".ds-nav { display: flex; align-items: center; gap: 4px; height: 64px; padding: 0 24px; background: rgba(255,255,255,0.95); border-bottom: 1px solid var(--color-grid, #d6dae0); font-family: var(--font-sans, 'Schibsted Grotesk', sans-serif); } .ds-nav-brand { margin-right: auto; font: 700 1.125rem var(--font-display, 'Bricolage Grotesque', sans-serif); letter-spacing: -0.02em; color: var(--color-ink, #0b1640); } .ds-nav-link { border-radius: 3px; padding: 8px 12px; font-size: 0.92rem; font-weight: 500; color: var(--color-ink-soft, #3b4463); text-decoration: none; transition: background-color 150ms, color 150ms; } .ds-nav-link:hover { background: var(--color-band, #f3f4f6); color: var(--color-ink, #0b1640); } .ds-nav-link[aria-current=page] { background: var(--color-sdi-wash, #e9f3fe); color: var(--color-sdi-strong, #0a62c9); } .ds-nav-link:focus-visible { outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: 2px; }"
+    },
+    {
+      "name": "Status Label",
+      "kind": "chip",
+      "refersTo": "status-label",
+      "description": "Estado impreso en mayúsculas sobre lavado plano; sin spinners.",
+      "html": "<span class=\"ds-status\">En línea</span> <span class=\"ds-status ds-status-off\">Sin conexión</span>",
+      "css": ".ds-status { display: inline-block; border-radius: 2px; padding: 2px 6px; background: var(--color-sdi-wash, #e9f3fe); color: var(--color-sdi-strong, #0a62c9); font: 600 0.68rem var(--font-sans, 'Schibsted Grotesk', sans-serif); letter-spacing: 0.06em; text-transform: uppercase; } .ds-status-off { background: var(--color-band, #f3f4f6); color: var(--color-ink, #0b1640); }"
+    },
+    {
+      "name": "Process Sheet",
+      "kind": "card",
+      "refersTo": "sheet-band",
+      "description": "La hoja: barra de fórmula, banda de columnas, canal numerado, columna Con SDI en lavado azul, celda SaaS en rojo y una fila protagonista resaltada.",
+      "html": "<div class=\"ds-sheet\"><div class=\"ds-fx\"><span class=\"ds-fx-ref\">A1</span><span class=\"ds-fx-sym\">ƒx</span><span class=\"ds-fx-val\">Construimos el sistema de tu proceso.</span></div><div class=\"ds-row ds-band\"><span></span><span>A</span><span>B</span><span>C</span></div><div class=\"ds-row ds-head\"><span class=\"ds-n\">2</span><span>Paso</span><span>Hoy</span><span class=\"ds-sdi\">Con SDI</span></div><div class=\"ds-row\"><span class=\"ds-n\">3</span><strong>Agenda</strong><span class=\"ds-saas\">Agenda online <em>suscripción</em></span><span>Agenda propia, conectada a la ficha</span></div><div class=\"ds-row\"><span class=\"ds-n\">4</span><strong>Inventario</strong><span><mark class=\"ds-mark\">Planilla que nadie actualiza a tiempo</mark></span><span>Stock que se descuenta solo</span></div></div>",
+      "css": ".ds-sheet { background: var(--color-paper, #fff); border: 1px solid var(--color-grid, #d6dae0); color: var(--color-ink, #0b1640); font: 400 0.98rem/1.5 var(--font-sans, 'Schibsted Grotesk', sans-serif); font-feature-settings: 'tnum' 1; box-shadow: 0 1px 2px rgba(11,22,64,0.06), 0 20px 50px -30px rgba(11,22,64,0.35); } .ds-fx { display: flex; border-bottom: 1px solid var(--color-grid, #d6dae0); font-size: 0.85rem; } .ds-fx-ref { width: 64px; display: flex; align-items: center; justify-content: center; font-weight: 600; border-right: 1px solid var(--color-grid, #d6dae0); } .ds-fx-sym { padding: 8px 10px; color: var(--color-band-ink, #586072); border-right: 1px solid var(--color-grid, #d6dae0); } .ds-fx-val { padding: 8px 12px; color: var(--color-ink-soft, #3b4463); } .ds-row { display: grid; grid-template-columns: 3rem 24% 33% 1fr; } .ds-row > * { padding: 12px 16px; border-right: 1px solid var(--color-grid, #d6dae0); border-bottom: 1px solid var(--color-grid, #d6dae0); } .ds-band > *, .ds-n { background: var(--color-band, #f3f4f6); color: var(--color-band-ink, #586072); font-size: 0.75rem; font-weight: 500; letter-spacing: 0.02em; text-align: center; padding: 4px; } .ds-head > * { font-size: 0.85rem; font-weight: 600; padding-top: 10px; padding-bottom: 10px; } .ds-sdi { background: var(--color-sdi-wash, #e9f3fe); color: var(--color-sdi-strong, #0a62c9); } .ds-saas { color: var(--color-saas, #c8281d); font-weight: 500; } .ds-saas em { font-style: normal; font-size: 0.7rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; margin-left: 6px; } .ds-mark { background: var(--color-mark, #ffe66b); color: inherit; padding: 0 4px; }"
+    },
+    {
+      "name": "Selected Cell",
+      "kind": "custom",
+      "refersTo": "sheet-band",
+      "description": "Celda activa con contorno azul de 2px y asa de relleno; contiene el H1 de cada hoja protagonista.",
+      "html": "<div class=\"ds-cell-selected\"><h1 class=\"ds-display\">Construimos el sistema de tu proceso. <span>No te acomodes a un SaaS.</span></h1></div>",
+      "css": ".ds-cell-selected { position: relative; background: var(--color-paper, #fff); outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: -2px; padding: 32px 28px; } .ds-cell-selected::after { content: ''; position: absolute; right: -4px; bottom: -4px; width: 7px; height: 7px; background: var(--color-sdi, #0b80ee); border: 1.5px solid var(--color-paper, #fff); } .ds-display { margin: 0; font: 800 clamp(2.1rem, 5.2vw, 4.4rem)/1.02 var(--font-display, 'Bricolage Grotesque', sans-serif); letter-spacing: -0.035em; color: var(--color-ink, #0b1640); text-wrap: balance; } .ds-display span { color: var(--color-sdi-strong, #0a62c9); }"
+    },
+    {
+      "name": "Sheet Tabs",
+      "kind": "nav",
+      "refersTo": "sheet-tab",
+      "description": "Pestañas al pie de la hoja: activa en papel con borde azul, SaaS en rojo, archivos en tinta de banda; Habla con SDI a la derecha.",
+      "html": "<div class=\"ds-tabs\"><span class=\"ds-tab ds-tab-active\">Procesos</span><span class=\"ds-tab ds-tab-saas\">Agenda online</span><span class=\"ds-tab ds-tab-saas\">CRM</span><span class=\"ds-tab\">Inventario.xlsx</span><span class=\"ds-tab ds-tab-wait\">Tu sistema</span><button class=\"ds-tabs-cta\">Habla con SDI</button></div>",
+      "css": ".ds-tabs { display: flex; align-items: stretch; gap: 1px; background: var(--color-band, #f3f4f6); border-top: 1px solid var(--color-grid, #d6dae0); font: 400 0.85rem var(--font-sans, 'Schibsted Grotesk', sans-serif); } .ds-tab { display: flex; align-items: center; padding: 10px 16px; white-space: nowrap; color: var(--color-band-ink, #586072); } .ds-tab-active { background: var(--color-paper, #fff); color: var(--color-ink, #0b1640); font-weight: 600; border-left: 1px solid var(--color-grid, #d6dae0); border-right: 1px solid var(--color-grid, #d6dae0); border-bottom: 2px solid var(--color-sdi, #0b80ee); } .ds-tab-saas { color: var(--color-saas, #c8281d); } .ds-tab-wait { font-style: italic; opacity: 0.8; } .ds-tabs-cta { margin: 4px 4px 4px auto; border: 0; border-radius: 3px; padding: 8px 14px; background: var(--color-sdi-strong, #0a62c9); color: #fff; font: 600 0.88rem var(--font-sans, 'Schibsted Grotesk', sans-serif); cursor: pointer; transition: background-color 150ms; } .ds-tabs-cta:hover { background: var(--color-ink, #0b1640); } .ds-tabs-cta:focus-visible { outline: 2px solid var(--color-sdi, #0b80ee); outline-offset: 2px; }"
+    },
+    {
+      "name": "Chat Message Rows",
+      "kind": "custom",
+      "refersTo": "sheet-band",
+      "description": "La conversación como hoja: canal con quién y hora, filas del visitante en resaltador suave, estado impreso.",
+      "html": "<ol class=\"ds-chat\"><li class=\"ds-msg ds-msg-me\"><span class=\"ds-who\"><b>Tú</b>10:42</span><p>Llevamos la producción en una planilla.</p></li><li class=\"ds-msg\"><span class=\"ds-who\"><b>SDI</b>10:42</span><p class=\"ds-typing\">Escribiendo…</p></li></ol>",
+      "css": ".ds-chat { list-style: none; margin: 0; padding: 0; width: 360px; border: 1px solid var(--color-grid, #d6dae0); background: var(--color-paper, #fff); font-family: var(--font-sans, 'Schibsted Grotesk', sans-serif); font-feature-settings: 'tnum' 1; } .ds-msg { display: grid; grid-template-columns: 3.25rem 1fr; border-bottom: 1px solid var(--color-grid, #d6dae0); } .ds-msg-me { background: var(--color-mark-soft, #fff7cc); } .ds-who { display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 4px 0; background: var(--color-band, #f3f4f6); color: var(--color-band-ink, #586072); border-right: 1px solid var(--color-grid, #d6dae0); font-size: 0.66rem; } .ds-who b { font-size: 0.75rem; color: var(--color-ink, #0b1640); } .ds-msg p { margin: 0; padding: 10px 12px; font-size: 0.93rem; line-height: 1.625; color: var(--color-ink, #0b1640); } .ds-msg p.ds-typing { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-sdi-strong, #0a62c9); }"
+    }
+  ],
+  "narrative": {
+    "northStar": "La planilla diurna",
+    "overview": "El sitio entero es una hoja de cálculo a la luz del día: celdas blancas sobre un escritorio gris frío, grilla de 1px, banda de columnas A B C, filas numeradas en un canal izquierdo, barra de fórmula con casilla de nombre arriba y pestañas de hoja abajo. El visitante reconoce el lugar donde hoy vive su proceso, y SDI lo convierte en sistema frente a sus ojos. No es una metáfora decorativa: las tablas son tablas reales (`<table>`, `<th scope>`), los formularios son filas de celdas y el chat es una hoja de conversación.\n\nLa tinta es el azul marino del logo SDI; la selección y todo lo que es \"sistema\" usa el azul SDI. Dos colores tienen papeles exclusivos y por eso pesan: el amarillo resaltador es la marca humana (una fila protagonista por pantalla) y el rojo existe solo para nombrar lo que hoy se paga como SaaS. La forma es casi cuadrada (3px), plana, con una sola sombra suave que levanta la hoja principal del escritorio.\n\nSe rechaza explícitamente el hero de titular más tres tarjetas de servicios y la estética neón de \"startup de IA\".",
+    "keyCharacteristics": [
+      "Gramática de planilla en cada superficie: banda de columnas, canal de números de fila, celda activa con contorno azul y asa.",
+      "Densidad de hoja de trabajo: celdas con 16px horizontales y 12px verticales, divisiones de 1px en `grid`.",
+      "Colores con jurisdicción: azul = sistema/acción, amarillo = marca humana, rojo = SaaS pagado.",
+      "Display Bricolage Grotesque muy pesado y apretado; UI y celdas en Schibsted Grotesk con cifras tabulares.",
+      "Un único movimiento de autor: \"Convertir en sistema\"."
+    ],
+    "rules": [
+      { "name": "The Red Means Paid Rule", "body": "`saas` se usa únicamente para nombrar lo que hoy se paga como SaaS. Nunca para alertas, énfasis, botones ni decoración. Los errores usan `saas-wash` con texto en `ink`.", "section": "colors" },
+      { "name": "The One Highlighter Rule", "body": "El amarillo `mark` marca una sola fila protagonista por pantalla. Si dos cosas llevan resaltador, ninguna es protagonista.", "section": "colors" },
+      { "name": "The Blue Is the System Rule", "body": "Selección, foco, acción y todo lo que pertenece a \"Con SDI\" va en azul SDI. El azul no se usa como decoración neutra.", "section": "colors" },
+      { "name": "The Printed Status Rule", "body": "Los estados se imprimen como rótulos pequeños en mayúsculas sobre un lavado plano (radio 2px). Sin spinners, puntos pulsantes ni cromo animado.", "section": "typography" },
+      { "name": "The Tabular Figures Rule", "body": "Toda cifra (horas, teléfonos, números de fila, códigos de orden) se compone con cifras tabulares; ya vienen activas desde `body`.", "section": "typography" },
+      { "name": "The Lines Before Shadows Rule", "body": "Una superficie nueva se separa con borde de 1px en `grid`, no con sombra. La sombra queda para la hoja protagonista y lo que flota (chat).", "section": "elevation" }
+    ],
+    "dos": [
+      "**Do** construir cada bloque de contenido como hoja: papel, borde de 1px en `grid`, banda de encabezados y canal de números de fila (2rem móvil, 3rem `md`).",
+      "**Do** poner el titular de cada página protagonista dentro de una celda seleccionada (contorno de 2px `sdi` con asa) bajo una barra de fórmula.",
+      "**Do** reservar `saas` para lo que hoy se paga como SaaS, y marcar con `mark` una sola fila protagonista por pantalla.",
+      "**Do** usar `sdi-strong` para texto y rellenos azules y `sdi` para contornos, foco y asas.",
+      "**Do** imprimir los estados como rótulos de 0.68 a 0.75rem, 600, mayúsculas, 0.06em, sobre lavado plano con radio de 2px.",
+      "**Do** mantener radios de 3px en controles y 0 en hojas, celdas y campos.",
+      "**Do** cortar en seco cualquier movimiento con `prefers-reduced-motion`.",
+      "**Do** llevar todo llamado a conversar a \"Habla con SDI\", que abre el chat con su sección de origen."
+    ],
+    "donts": [
+      "**Don't** usar `saas` en errores, alertas, énfasis o botones; los errores van en `saas-wash` con texto `ink`.",
+      "**Don't** resaltar con `mark` más de una fila protagonista en la misma pantalla.",
+      "**Don't** armar el hero de titular más tres tarjetas de servicios, ni tarjetas redondeadas con sombra para agrupar contenido.",
+      "**Don't** usar la estética neón de IA (gradientes, brillos, fondos oscuros) ni spinners o puntos pulsantes para estados.",
+      "**Don't** agregar un segundo movimiento coreografiado; \"Convertir en sistema\" es el único.",
+      "**Don't** publicar un ícono de red social sin URL real."
+    ]
+  }
+}

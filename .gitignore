@@ -39,3 +39,12 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.gstack/
+
+# herramientas locales (impeccable / Claude Code)
+.claude/settings.local.json
+.impeccable/questions/
+.impeccable/review/
+.impeccable/live/
+.impeccable/hook.cache.json
+.impeccable/config.local.json
